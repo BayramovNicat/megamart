@@ -1,0 +1,192 @@
+body {
+    font-family: "FuturaPT-Book";
+    color: #3b3742;
+    overflow-x: hidden;
+}
+
+h1, .h1, h2, .h2, h3, .h3{
+	letter-spacing: 1px;
+}
+
+h4, .h4, h5, .h5{
+    letter-spacing: 0.5px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5{
+    margin: 0;
+    font-family: "FuturaPT-Heavy";
+}
+
+a {
+    color: #3b3742;
+    text-decoration: underline;
+}
+
+a:hover, a:focus {
+    color: #000000;
+}
+
+.page-header{
+	padding: 35px 0 16px;
+	margin: 0;
+	border: none;
+}
+
+.page-header h1,
+.page-header h2,
+.page-header h3,
+.page-header h4,
+.page-header h5{
+	text-transform: uppercase;
+}
+
+.navbar{
+    border: none;
+    box-shadow: 0 2px 30px rgba(43, 43, 43, 0.25);
+}
+
+.navbar-collapse {
+    padding: 0;
+}
+
+.navbar-default {
+    background-color: #f6f6f6;
+}
+
+.navbar-nav > li > a {
+    text-transform: uppercase;
+    font-family: 'FuturaPT-Heavy';
+    text-decoration: underline;
+    letter-spacing: 0.6px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #3b3742;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #3b3742;
+    background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > .dropdown > a, 
+.navbar-default .navbar-nav > .dropdown > a:hover, 
+.navbar-default .navbar-nav > .dropdown > a:focus,
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus{
+    color: #fff;
+    background-color: #000000;
+    text-decoration: none;
+}
+
+.btn {
+	letter-spacing: 1px;
+	font-family: 'FuturaPT-Heavy';
+	text-decoration: none;
+    padding: 6px 32px;
+    border: none;
+    border-radius: 34px;
+    text-transform: uppercase;
+    outline: none;
+	border: none;
+}
+
+.btn-default {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus, 
+.btn-default.focus,
+.btn-default:active, 
+.btn-default.active, 
+.open > .dropdown-toggle.btn-default,
+.btn-default:active:hover, 
+.btn-default.active:hover, 
+.open > .dropdown-toggle.btn-default:hover, 
+.btn-default:active:focus, 
+.btn-default.active:focus, 
+.open > .dropdown-toggle.btn-default:focus, 
+.btn-default:active.focus, 
+.btn-default.active.focus, 
+.open > .dropdown-toggle.btn-default.focus {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+
+.btn-default.disabled, 
+.btn-default[disabled], 
+fieldset[disabled] .btn-default, 
+.btn-default.disabled:hover, 
+.btn-default[disabled]:hover, 
+fieldset[disabled] .btn-default:hover, 
+.btn-default.disabled:focus, 
+.btn-default[disabled]:focus, 
+fieldset[disabled] .btn-default:focus, 
+.btn-default.disabled.focus, 
+.btn-default[disabled].focus, 
+fieldset[disabled] .btn-default.focus, 
+.btn-default.disabled:active, 
+.btn-default[disabled]:active, 
+fieldset[disabled] .btn-default:active, 
+.btn-default.disabled.active, 
+.btn-default[disabled].active, 
+fieldset[disabled] .btn-default.active {
+    color: #3b3742;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-primary {
+    color: #000000;
+    background-color: #ffd600;
+    border-color: #2e6da4;
+}
+
+.btn-primary:hover,
+.btn-primary:focus, 
+.btn-primary.focus,
+.btn-primary:active, 
+.btn-primary.active, 
+.open > .dropdown-toggle.btn-primary,
+.btn-primary:active:hover, 
+.btn-primary.active:hover, 
+.open > .dropdown-toggle.btn-primary:hover, 
+.btn-primary:active:focus, 
+.btn-primary.active:focus, 
+.open > .dropdown-toggle.btn-primary:focus, 
+.btn-primary:active.focus, 
+.btn-primary.active.focus, 
+.open > .dropdown-toggle.btn-primary.focus {
+    color: #000000;
+    background-color: #ffd600;
+    border-color: #204d74;
+}
+
+.carousel .item {
+	height: 500px;
+	background-color: #777;
+}
+
+.container .jumbotron, 
+.container-fluid .jumbotron{
+	background-color: #eaeaea;
+}
+
+.container-fluid{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media only screen and (min-width : 768px) {
+	.navbar-nav > li > a {
+	    padding-top: 23px;
+	    padding-bottom: 19px;
+	}
+}
