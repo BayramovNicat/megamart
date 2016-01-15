@@ -6,7 +6,9 @@
     "bootstrap": "",
     "font-awesome" : "",
     "html5shiv" : "",
-    "respond" : ""
+    "respond" : "",
+    "slick-carousel" : "",
+    "imagesloaded" : ""
   },
   "authors": [
     "Bayramov Nicat"

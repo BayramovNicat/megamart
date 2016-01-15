@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Newline</title>
+    <title>Megamart</title>
 
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/slick-carousel/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick-carousel/slick/slick-theme.css" rel="stylesheet">
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     
   	<link href="theme/bootstrap_skin.css" rel="stylesheet">
@@ -22,89 +24,638 @@
   </head>
   <body>
 
-<div id="wrapper">
+    <div id="wrapper">
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li>
-                    <a href="#"><i class="fa fa-bars"></i> <span>Toggle menu</span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-user"></i> <span>Dashboard</span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-shopping-bag"></i> <span>Shortcuts</span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-thumb-tack"></i> <span>Overview</span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-whatsapp"></i> <span>Events</span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-share-alt"></i> <span>About</span></a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+              <li>
+                  <a href="#"><i class="fa fa-bars"></i> <span>Toggle menu</span></a>
+              </li>
+              <li>
+                  <a href="#"><i class="fa fa-user"></i> <span>Dashboard</span></a>
+              </li>
+              <li>
+                  <a href="#"><i class="fa fa-shopping-bag"></i> <span>Shortcuts</span></a>
+              </li>
+              <li>
+                  <a href="#"><i class="fa fa-thumb-tack"></i> <span>Overview</span></a>
+              </li>
+              <li>
+                  <a href="#"><i class="fa fa-whatsapp"></i> <span>Events</span></a>
+              </li>
+              <li>
+                  <a href="#"><i class="fa fa-share-alt"></i> <span>About</span></a>
+              </li>
+          </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-          <header>
-            <div class="header-top">
-              <div class="container-fluid">
-                header-top
-              </div>
-            </div>
-            <div class="header-main">
-              <div class="container-fluid">
-                header-main
-              </div>
-            </div>
-            <nav class="navbar navbar-default">
-              <div class="container-fluid">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <header>
+          <div id="header-top">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-36">
+                  <ul>
+                    <li><a href="#">Новости технологий</a></li>
+                    <li><a href="#">Гарантия и возврат</a></li>
+                    <li><a href="#">Как заказать</a></li>
+                    <li><a href="#">Кредит</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Акции</a></li>
+                  </ul>
                 </div>
+                <div class="col-lg-24">
+                  <ul class="pull-right">
+                    <li>Пн – Пт: 9:30-18:30, Сб: 9:30-16:00</li>
+                    <li>master</li>
+                    <li>maestro</li>
+                    <li>visa</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="header-main">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12">
+                  <a href="#"><img class="img-responsive" src="img/logo-megamart@2x.png" alt=""></a>
+                </div>
+                <div class="col-lg-36">
+                  <div class="search input-group">
+                    <span class="input-group-btn">
+                      <div class="btn-group">
+                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                          Везде
+                          <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Dropdown link</a></li>
+                          <li><a href="#">Dropdown link</a></li>
+                          <li><a href="#">Dropdown link</a></li>
+                        </ul>
+                      </div>
+                    </span>
+                    <button type="button">P</button>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-12 contact">
+                  <h4>(012) 404 - 80 - 90 <a href="#">></a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">КАТЕГОРИИ ТОВАРОВ ≡</a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">КАТЕГОРИИ ТОВАРОВ ≡</a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">БЫТОВАЯ ТЕХНИКА</a></li>
+                  <li><a href="#">ДЕТСКИЙ МИР</a></li>
+                  <li><a href="#">ТЕЛЕФОНЫ</a></li>
+                  <li><a href="#">ПАРФЮМЕРИЯ И КОСМЕТИКА</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#" class="text-red">СКИДКИ</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <div class="container-fluid">
+
+            <section id="hot-super-deals">
+              <div class="row">
+                <div class="col-lg-42">
+                  <div class="page-header">
+                    <h5 id="buttons" class="text-red">ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ</h5>
+                  </div>
+                  <div id="hot-deals-slider">
+                    <div class="slider-item">
+
+                      <div class="img" style="background-image: url(img/1.jpg)" alt=""></div>
+
+                      <span class="discount">18%</span>
+
+                      <h2>IMAC 2015</h2>
+
+                      <p class="lead">Купи онлайн – получи скидку 18%</p>
+
+                      <div class="product-price">
+                        <span class="past-price">539<i class="azn-icon"></i></span>
+                        <span class="present-price">449<i class="azn-icon"></i></span>
+                      </div>
+                      
+                      <ul class="product-actions">
+                        <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                        <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                        <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
                       </ul>
-                    </li>
-                    <li><a href="#">БЫТОВАЯ ТЕХНИКА</a></li>
-                    <li><a href="#">ДЕТСКИЙ МИР</a></li>
-                    <li><a href="#">ТЕЛЕФОНЫ</a></li>
-                    <li><a href="#">ПАРФЮМЕРИЯ И КОСМЕТИКА</a></li>
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" class="text-red">СКИДКИ</a></li>
-                  </ul>
+
+                      <a href="#" class="btn btn-primary">Купить</a>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-18">
+                  <div class="page-header">
+                    <h5 id="buttons" class="text-red">СУПЕР ПРЕДЛОЖЕНИЕ</h5>
+                  </div>
+                  <div  id="super-deals" class="img" style="background-image: url(img/1.jpg)" alt=""></div>
                 </div>
               </div>
-            </nav>
-          </header>
+            </section>
+
+            <section id="sell-out">
+              <div class="row">
+                <div class="col-lg-60">
+                  <div class="page-header black-header">
+                    <h5 id="buttons">РАСПРОДАЖА</h5>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="card-product white">
+                    <div class="product-img">
+                      <span class="discount">18%</span>
+                      <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="product-title">
+                      <h5>iPhone 6S 64 GB</h5>
+                    </div>
+                    <div class="product-price">
+                      <span class="past-price">539<i class="azn-icon"></i></span>
+                      <span class="present-price">449<i class="azn-icon"></i></span>
+                    </div>
+                    <ul class="product-actions">
+                      <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                      <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                      <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Купить</a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="card-product white">
+                    <div class="product-img">
+                      <span class="discount">18%</span>
+                      <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="product-title">
+                      <h5>iPhone 6S 64 GB</h5>
+                    </div>
+                    <div class="product-price">
+                      <span class="past-price">539<i class="azn-icon"></i></span>
+                      <span class="present-price">449<i class="azn-icon"></i></span>
+                    </div>
+                    <ul class="product-actions">
+                      <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                      <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                      <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Купить</a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="card-product white">
+                    <div class="product-img">
+                      <span class="discount">18%</span>
+                      <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="product-title">
+                      <h5>iPhone 6S 64 GB</h5>
+                    </div>
+                    <div class="product-price">
+                      <span class="past-price">539<i class="azn-icon"></i></span>
+                      <span class="present-price">449<i class="azn-icon"></i></span>
+                    </div>
+                    <ul class="product-actions">
+                      <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                      <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                      <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Купить</a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="card-product white">
+                    <div class="product-img">
+                      <span class="discount">18%</span>
+                      <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="product-title">
+                      <h5>iPhone 6S 64 GB</h5>
+                    </div>
+                    <div class="product-price">
+                      <span class="past-price">539<i class="azn-icon"></i></span>
+                      <span class="present-price">449<i class="azn-icon"></i></span>
+                    </div>
+                    <ul class="product-actions">
+                      <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                      <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                      <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Купить</a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="card-product white">
+                    <div class="product-img">
+                      <span class="discount">18%</span>
+                      <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="product-title">
+                      <h5>iPhone 6S 64 GB</h5>
+                    </div>
+                    <div class="product-price">
+                      <span class="past-price">539<i class="azn-icon"></i></span>
+                      <span class="present-price">449<i class="azn-icon"></i></span>
+                    </div>
+                    <ul class="product-actions">
+                      <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                      <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                      <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Купить</a>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+            
+            <section id="discount">
+              <div class="jumbotron" style="background: url(../img/1.jpg);">
+                <h2>НОВОГОДНИЕ  СКИДКИ  УЖЕ ЗДЕСЬ!</h2>
+              </div>
+            </section>
+            
+            <section id="new-products">
+              <div class="row">
+                <div class="col-lg-60">
+                  <div class="page-header">
+                    <h5 id="buttons">НОВИНКИ</h5>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="card-product">
+                    <div class="product-img">
+                      <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="product-title">
+                      <h5>iPhone 6S 64 GB</h5>
+                    </div>
+                    <div class="product-price">
+                      <span class="past-price">539<i class="azn-icon"></i></span>
+                      <span class="present-price">449<i class="azn-icon"></i></span>
+                    </div>
+                    <ul class="product-actions">
+                      <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                      <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                      <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Купить</a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="card-product">
+                    <div class="product-img">
+                      <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="product-title">
+                      <h5>iPhone 6S 64 GB</h5>
+                    </div>
+                    <div class="product-price">
+                      <span class="past-price">539<i class="azn-icon"></i></span>
+                      <span class="present-price">449<i class="azn-icon"></i></span>
+                    </div>
+                    <ul class="product-actions">
+                      <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                      <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                      <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Купить</a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="card-product">
+                    <div class="product-img">
+                      <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="product-title">
+                      <h5>iPhone 6S 64 GB</h5>
+                    </div>
+                    <div class="product-price">
+                      <span class="past-price">539<i class="azn-icon"></i></span>
+                      <span class="present-price">449<i class="azn-icon"></i></span>
+                    </div>
+                    <ul class="product-actions">
+                      <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                      <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                      <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Купить</a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="card-product">
+                    <div class="product-img">
+                      <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="product-title">
+                      <h5>iPhone 6S 64 GB</h5>
+                    </div>
+                    <div class="product-price">
+                      <span class="past-price">539<i class="azn-icon"></i></span>
+                      <span class="present-price">449<i class="azn-icon"></i></span>
+                    </div>
+                    <ul class="product-actions">
+                      <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                      <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                      <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Купить</a>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="card-product">
+                    <div class="product-img">
+                      <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="product-title">
+                      <h5>iPhone 6S 64 GB</h5>
+                    </div>
+                    <div class="product-price">
+                      <span class="past-price">539<i class="azn-icon"></i></span>
+                      <span class="present-price">449<i class="azn-icon"></i></span>
+                    </div>
+                    <ul class="product-actions">
+                      <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                      <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                      <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Купить</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+              
+            <section id="bestsellers-and-news">
+
+              <div class="row">
+
+                <div class="col-lg-48">
+
+                  <div class="page-header">
+                    <h5 id="buttons">БЕСТСЕЛЛЕРЫ</h5>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-lg-30">
+                      <div class="card-product flipped">
+                        <div class="row">
+                          <div class="col-lg-30">
+                            <div class="product-img">
+                              <img src="img/1.jpg" alt="">
+                            </div>
+                          </div>
+                          <div class="col-lg-30">
+                            <div class="product-title">
+                              <h5>iPhone 6S 64 GB</h5>
+                            </div>
+                            <div class="product-price">
+                              <span class="past-price">539<i class="azn-icon"></i></span>
+                              <span class="present-price">449<i class="azn-icon"></i></span>
+                            </div>
+                            <ul class="product-actions">
+                              <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                              <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                              <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-30">
+                      <div class="card-product flipped">
+                        <div class="row">
+                          <div class="col-lg-30">
+                            <div class="product-img">
+                              <img src="img/1.jpg" alt="">
+                            </div>
+                          </div>
+                          <div class="col-lg-30">
+                            <div class="product-title">
+                              <h5>iPhone 6S 64 GB</h5>
+                            </div>
+                            <div class="product-price">
+                              <span class="past-price">539<i class="azn-icon"></i></span>
+                              <span class="present-price">449<i class="azn-icon"></i></span>
+                            </div>
+                            <ul class="product-actions">
+                              <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                              <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                              <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-30">
+                      <div class="card-product flipped">
+                        <div class="row">
+                          <div class="col-lg-30">
+                            <div class="product-img">
+                              <img src="img/1.jpg" alt="">
+                            </div>
+                          </div>
+                          <div class="col-lg-30">
+                            <div class="product-title">
+                              <h5>iPhone 6S 64 GB</h5>
+                            </div>
+                            <div class="product-price">
+                              <span class="past-price">539<i class="azn-icon"></i></span>
+                              <span class="present-price">449<i class="azn-icon"></i></span>
+                            </div>
+                            <ul class="product-actions">
+                              <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                              <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                              <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-30">
+                      <div class="card-product flipped">
+                        <div class="row">
+                          <div class="col-lg-30">
+                            <div class="product-img">
+                              <img src="img/1.jpg" alt="">
+                            </div>
+                          </div>
+                          <div class="col-lg-30">
+                            <div class="product-title">
+                              <h5>iPhone 6S 64 GB</h5>
+                            </div>
+                            <div class="product-price">
+                              <span class="past-price">539<i class="azn-icon"></i></span>
+                              <span class="present-price">449<i class="azn-icon"></i></span>
+                            </div>
+                            <ul class="product-actions">
+                              <li><a href="#"><img src="img/1451257537-019-heart-like-favorite-in-love.png" alt=""></a> 451</li>
+                              <li><a href="#"><img src="img/1451257501-019-pin-marker-2.png" alt=""></a> 13</li>
+                              <li><a href="#"><img src="img/1451252352-share.png" alt=""></a> 97</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-12">
+
+                  <div class="page-header">
+                    <h5 id="buttons">НОВОСТИ</h5>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-lg-60">
+                      <div class="card-news">
+                        <span class="date">9 октября</span>
+                        <a class="title" href="#">Бонусные карты нашего магазина помогут вам приобретая – приобретать еще больше.</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-60">
+                      <div class="card-news">
+                        <span class="date">29 ceнтября</span>
+                        <a class="title" href="#">Ассортимент увеличивается. Это может значить только одно – вы в нужном месте в нужное время.</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-60">
+                      <div class="card-news">
+                        <span class="date">31 августа</span>
+                        <a class="title" href="#">Скидки удваиваются! Торопитесь – это просто г грандиозный обвал цен. Только в нашем магазине рандиозный обвал цен. Только в нашем магазине!</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-60">
+                      <div class="card-news">
+                        <span class="date">9 октября</span>
+                        <a class="title" href="#">Бонусные карты нашего магазина помогут вам приобретая – приобретать еще больше.</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-60">
+                      <div class="card-news">
+                        <span class="date">29 ceнтября</span>
+                        <a class="title" href="#">Ассортимент увеличивается. Это может значить только одно – вы в нужном месте в нужное время.</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </section>
+
+          </div>
+        </main>
+        <footer>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-24">
+                <div class="row">
+                  <div class="col-lg-60">
+                    <p class="copyright">© 2010-2015. Megamart - онлайн мегамаркет</p>
+                    <p>Дж. Джаббарлы 44, телефон: (012) 404-80-90</p>
+                  </div>
+                  <div class="col-lg-30">
+                    <ul>
+                      <li><a href="#">О магазине</a></li>
+                      <li><a href="#">Вакансии</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-30">
+                    <ul>
+                      <li><a href="#">Правила использования сайта</a></li>
+                      <li><a href="#">Подписаться на обновления</a></li>
+                      <li><a href="#">shop@megamart.az</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-36">
+                <div class="row">
+                  <div class="col-lg-60">
+                    <div class="page-header">
+                      <h5 id="buttons" class="text-red">О МАГАЗИНЕ</h5>
+                    </div>
+                    <p>Megamart.az – это азербайджанский интернет-магазин, и даже больше, это интернет-гипермаркет Азербайджана в новом формате, с удобствами, которые приятно вас удивят. География возможностей доставки заказов охватывает весь Азербайджан. Интернет-магазин представляет широкий ассортимент качественных товаров ведущих мировых брендов самых различных товарных группах, где представлены компьютеры,  ноутбуки, планшеты, принтеры, сервера, коммуникационные шкафы, далее здесь можно найти огромный ассортимент мелкой и крупной бытовой техники – холодильники, стиральные машины, посудомоечные машины, и многое другое.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div id="basket">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <a href="">СРАВНЕНИЯ <span class="badge">4</span></a>
+              </div>
+              <div class="col-lg-12">
+                <a href="">ОТМЕЧЕННОЕ <span class="badge">45</span></a>
+              </div>
+              <div class="col-lg-12">
+                <a href="">КОРЗИНА <span class="badge">2</span></a>
+              </div>
+              <div class="col-lg-24">
+                <a href="" class="btn btn-default pull-right">ОФОРМИТЬ</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /#page-content-wrapper -->
+      </div>
+      <!-- /#page-content-wrapper -->
 
     </div>
   
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/slick-carousel/slick/slick.min.js"></script>
+    <script src="lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="lib/imagefill/js/jquery-imagefill.js"></script>
+
+
+    <script src="js/common.js"></script>
   </body>
 </html>

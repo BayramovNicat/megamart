@@ -11,3 +11,17 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'JISAZN-Bold';
+  src: url('../fonts/JISAZN/JISAZN-Bold/jaznb.eot') format('embedded-opentype'), url('../fonts/JISAZN/JISAZN-Bold/jaznb.woff') format('woff'), url('../fonts/JISAZN/JISAZN-Bold/jaznb.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JISAZN-Regular';
+  src: url('../fonts/JISAZN/JISAZN-Regular/jaznr.eot') format('embedded-opentype'), url('../fonts/JISAZN/JISAZN-Regular/jaznr.woff') format('woff'), url('../fonts/JISAZN/JISAZN-Regular/jaznr.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
