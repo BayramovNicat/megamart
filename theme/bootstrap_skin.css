@@ -253,4 +253,8 @@ fieldset[disabled] .btn-default.active {
 	    padding-top: 23px;
 	    padding-bottom: 19px;
 	}
+
+    .lead {
+        font-size: 20px;
+    }
 }
