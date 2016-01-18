@@ -177,6 +177,34 @@ fieldset[disabled] .btn-default.active {
     border-color: #204d74;
 }
 
+
+
+.btn-info {
+    color: #3b3742;
+    background-color: #F6F6F6;
+    border-color: #F6F6F6;
+}
+
+.btn-info:hover,
+.btn-info:focus, 
+.btn-info.focus,
+.btn-info:active, 
+.btn-info.active, 
+.open > .dropdown-toggle.btn-info,
+.btn-info:active:hover, 
+.btn-info.active:hover, 
+.open > .dropdown-toggle.btn-info:hover, 
+.btn-info:active:focus, 
+.btn-info.active:focus, 
+.open > .dropdown-toggle.btn-info:focus, 
+.btn-info:active.focus, 
+.btn-info.active.focus, 
+.open > .dropdown-toggle.btn-info.focus {
+    color: #3b3742;
+    background-color: #F6F6F6;
+    border-color: #F6F6F6;
+}
+
 .carousel .item {
 	height: 405px;
 }

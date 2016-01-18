@@ -15,6 +15,7 @@
 }
 
 #sidebar-wrapper {
+    overflow-x: hidden;
     z-index: 1000;
     position: fixed;
     left: 80px;
@@ -23,10 +24,10 @@
     margin-left: -80px;
     overflow-y: auto;
     background: #3b3742;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 #page-content-wrapper {
@@ -46,6 +47,12 @@
     list-style: none;
 }
 
+.navbar .dropdown > a > i{
+    font-size: 18px;
+    float: right;
+    margin-left: 20px;
+}
+
 #wrapper.sidebar-wrapper-opened #sidebar-wrapper{
     left: 250px;
     margin-left: -250px;
@@ -55,17 +62,27 @@
     width: 250px;
 }
 
+#wrapper.sidebar-wrapper-opened #sidebar-wrapper .sidebar-nav li a{
+    width: 250px;
+}
+
 #wrapper.sidebar-wrapper-opened #sidebar-wrapper .sidebar-nav li a span{
-    display: inline-block;
+    opacity: 1;
 }
 
 .sidebar-nav li a {
-    padding: 15px 30px;
+    position: relative;
+    height: 60px;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'FuturaPT-Heavy';
     color: #fff;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    width: 80px;
 }
 
 .sidebar-nav li a:hover {
@@ -75,12 +92,28 @@
 }
 
 .sidebar-nav li a i{
-    width: 20px;
+    position: absolute;
+    left: 26px;
+    width: 24px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
     text-align: center;
+    margin-right: 15px;
 }
 
 .sidebar-nav li a span{
-    display: none;
+    position: absolute;
+    display: inline-block;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    left: 65px;
+    height: 60px;
+    line-height: 60px;
+    opacity: 0;
+    overflow: hidden;
 }
 
 .sidebar-nav li a:active,
@@ -129,6 +162,10 @@
     color: #fff;
 }
 
+#header-top li img{
+    margin-top: -5px;
+}
+
 #header-main{
     height: 140px;
     background-color: #b83222;
@@ -158,8 +195,24 @@
     width: 100%;
 }
 
+#header-main .contact a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
 .search{
     position: relative;
+}
+
+.search .btn{
+    padding: 10px 60px 10px 15px !important;
+    position: relative;
+}
+
+.search .btn i{
+    position: absolute;
+    right: 17px;
 }
 
 .search button{
@@ -169,11 +222,11 @@
     z-index: 3;
     border: none;
     background: transparent;
-    color: #fff;
+    color: #3b3742;
 }
 
 .search input{
-    background: transparent;
+    background: #fff;
     border: 1px solid #fff;
     height: 40px;
     color: #fff;
@@ -280,16 +333,22 @@
 }
 
 #hot-super-deals .product-price .past-price{
-    padding-right: 24px;
+    padding-right: 26px;
 }
 
-#hot-super-deals .product-price i.azn-icon{
+#hot-super-deals .product-price i.mm-icon-azn{
     top: 0;
+    position: absolute;
+    margin-left: 2px;
     font-size: 14px;
 }
 
 #hot-super-deals .product-actions{
     margin-top: 35px;
+}
+
+#hot-super-deals .product-actions a{
+    color: #fff;
 }
 
 #hot-super-deals .product-actions li img{
@@ -309,7 +368,7 @@
 
 #hot-super-deals .slick-arrow{
     top: auto;
-    bottom: 40px;
+    bottom: 30px;
 }
 
 #hot-super-deals .slick-next{
@@ -363,16 +422,22 @@ border-top-left-radius: 0;
     background: #f24f3b;
 }
 
+#hot-deals-slider{
+    height: 405px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
 .card-product{
     background-color: #F6F6F6;
     padding: 20px;
     text-align: center;
-    -webkit-border-bottom-right-radius: 35px;
-    -webkit-border-bottom-left-radius: 35px;
-    -moz-border-radius-bottomright: 35px;
-    -moz-border-radius-bottomleft: 35px;
-    border-bottom-right-radius: 35px;
-    border-bottom-left-radius: 35px;
+    -webkit-border-bottom-right-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     position: relative;
     height: 373px;
     margin-bottom: 20px;
@@ -390,9 +455,9 @@ border-top-left-radius: 0;
 
 .card-product.white{
     background-color: #fff;
-    -webkit-box-shadow: 0px 8px 50px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 8px 50px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 8px 50px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    -moz-box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .card-product.flipped{
@@ -462,6 +527,19 @@ border-top-left-radius: 0;
     margin: 20px 0;
 }
 
+.product-actions a{
+    text-decoration: none;
+    font-size: 16px;
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin-right: 3px;
+}
+
+.product-actions a.active{
+    color: #f24f3b !important;
+}
+
 .product-actions li{
     display: inline-block;
 }
@@ -518,16 +596,12 @@ footer ul li a:hover{
     color: #F96D5B;
 }
 
-.sidebar-wrapper-opened #basket{
-    width: calc(100% - 250px);
-}
-
 #basket{
     position: fixed;
     bottom: 0;
     right: 0;
     width: calc(100% - 80px);
-    background-color: #f24f3b;
+    background-color: rgba(242,79,59,0.8);
     height: 60px;
     line-height: 60px;
     z-index: 10;
@@ -546,15 +620,20 @@ footer ul li a:hover{
     color: #fff;
     text-decoration: none;
     letter-spacing: 1px;
+    height: 100%;
+    display: inline-block;
+}
+
+#basket a i{
+    font-size: 26px;
+    float: left;
+    margin-top: 2px;
+    margin-right: 10px;
 }
 
 @media(min-width:768px) {
     #wrapper {
         padding-left: 80px;
-    }
-
-    #wrapper.sidebar-wrapper-opened{
-        padding-left: 250px;
     }
 
     #sidebar-wrapper {
@@ -601,17 +680,11 @@ footer ul li a:hover{
     z-index: 1;
 }
 
-i.azn-icon{
-    font-family: 'JISAZN-Bold';
-    font-style: normal;
+i.mm-icon-azn{
     font-size: 10px;
     position: absolute;
     top: 1px;
-    margin: 0 2px;
-}
-
-i.azn-icon:before{
-    content: 'M';
+    margin-left: 2px;
 }
 
 span.discount{
@@ -626,4 +699,16 @@ span.discount{
     line-height: 30px;
     height: 30px;
     background: url('../img/rectangle-351.png');
+}
+
+.slick-prev:before, .slick-next:before{
+    font-family: 'megamart-icons';
+}
+
+.slick-prev:before {
+    content: "\62";
+}
+
+.slick-next:before {
+    content: "\61";
 }

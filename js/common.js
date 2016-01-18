@@ -12,6 +12,17 @@ $('#sell-out').imagesLoaded( function() {
 	$('.product-img').imagefill({target:'img'}); 
 });
 
-$(document).on('click','#sidebar-wrapper-open',function(){
-	$('#wrapper').toggleClass('sidebar-wrapper-opened');
+
+function sidebar_open(){
+	$('#sidebar-wrapper-open').on('click',function(){
+		$('#wrapper').toggleClass('sidebar-wrapper-opened');
+		return false;
+	});
+	$('#sidebar-wrapper').on('mouseleave',function(){
+		$('#wrapper').removeClass('sidebar-wrapper-opened');
+	});
+}
+
+$(document).ready(function(){
+	sidebar_open();
 });
