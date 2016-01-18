@@ -379,6 +379,10 @@
 #hot-super-deals .slick-dots{
     bottom: 40px;
     margin-bottom: 0;
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+    left: 50%;
 }
 
 #hot-super-deals .slick-prev{
@@ -711,4 +715,9 @@ span.discount{
 
 .slick-next:before {
     content: "\61";
+}
+
+.slick-dots li button{
+    width: 10px;
+    height: 10px;
 }
