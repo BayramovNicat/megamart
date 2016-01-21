@@ -14,6 +14,7 @@
     
   	<link href="theme/bootstrap_skin.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -29,9 +30,8 @@
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
           <ul class="sidebar-nav">
-              <li>
+              <li class="hidden-xs hidden-sm">
                   <a href="#" id="sidebar-wrapper-open"><i class="mm-icon-menu"></i><span>Toggle menu</span></a>
-
               </li>
               <li>
                   <a href="#"><i class="mm-icon-neighbor"></i> <span>Dashboard</span></a>
@@ -58,7 +58,7 @@
           <div id="header-top">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-36">
+                <div class="col-lg-36 hidden-sm hidden-xs">
                   <ul>
                     <li><a href="#">Новости технологий</a></li>
                     <li><a href="#">Гарантия и возврат</a></li>
@@ -68,12 +68,18 @@
                     <li><a href="#">Акции</a></li>
                   </ul>
                 </div>
-                <div class="col-lg-24">
+                <div class="col-lg-24 hidden-sm hidden-xs">
                   <ul class="pull-right">
-                    <li><img src="img/utility-33.png" alt=""> Пн – Пт: 9:30-18:30, Сб: 9:30-16:00</li>
                     <li><img src="img/master-card.png" alt=""></li>
                     <li><img src="img/maestro.png" alt=""></li>
                     <li><img src="img/v-i-s-a.png" alt=""></li>
+                  </ul>
+                  <span class="pull-right-md pull-left-sm"><img class="clock-icon" src="img/utility-33.png" alt=""> Пн – Пт: 9:30-18:30, Сб: 9:30-16:00</span>
+                </div>
+                <div class="col-sm-60 text-center hidden-lg hidden-md">
+                  <ul class="numbers">
+                    <li>(012) 404-80-90</li>
+                    <li>(055) 944-47-02</li>
                   </ul>
                 </div>
               </div>
@@ -82,10 +88,14 @@
           <div id="header-main">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-12">
-                  <a href="#"><img class="img-responsive" src="img/logo-megamart@2x.png" alt=""></a>
+                <div class="col-lg-36 col-sm-12 col-xs-12 hidden-lg hidden-md">
+                  <a href="#" id="open-mini-sidebar" class="side-button"><i class="mm-icon-menu"></i></a>
                 </div>
-                <div class="col-lg-36">
+                <div class="col-lg-12 col-sm-36 col-xs-36">
+                  <a href="#" class="logo"><img class="img-responsive" src="img/logo.png" alt=""></a>
+                </div>
+                <div class="col-lg-36 col-sm-12 col-xs-12 search-container">
+                  <a href="#" id="search-button" class="side-button text-right search-button hidden-lg hidden-md"><i class="mm-icon-search"></i></a>
                   <div class="search input-group">
                     <span class="input-group-btn">
                       <div class="btn-group">
@@ -104,7 +114,7 @@
                     <input type="text" placeholder="Поиск по товарам" class="form-control">
                   </div>
                 </div>
-                <div class="col-lg-12 contact">
+                <div class="col-lg-12 contact hidden-sm hidden-xs">
                   <h4>(012) 404 - 80 - 90 <a href="#"><i class="mm-icon-arrow-top"></i></a></h4>
                 </div>
               </div>
@@ -114,10 +124,7 @@
             <div class="container-fluid">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
+                  <i class="mm-icon-menu"></i><span class="button-text">Каталог товаров</span>
                 </button>
               </div>
 
@@ -253,11 +260,11 @@
                     <h5 id="buttons">РАСПРОДАЖА</h5>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-30 col-xs-30">
                   <div class="card-product white">
                     <div class="product-img">
                       <span class="discount">18%</span>
-                      <img src="img/1.jpg" alt="">
+                      <img src="https://megamart.az/26980-68562-large/-robello-jng24.jpg" alt="">
                     </div>
                     <div class="product-title">
                       <h5>iPhone 6S 64 GB</h5>
@@ -274,11 +281,11 @@
                     <a href="#" class="btn btn-primary">Купить</a>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-30 col-xs-30">
                   <div class="card-product white">
                     <div class="product-img">
                       <span class="discount">18%</span>
-                      <img src="img/1.jpg" alt="">
+                      <img src="https://megamart.az/36617-68488-large/-dahua-ca-dw181e.jpg" alt="">
                     </div>
                     <div class="product-title">
                       <h5>iPhone 6S 64 GB</h5>
@@ -295,11 +302,11 @@
                     <a href="#" class="btn btn-primary">Купить</a>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-30 col-xs-30">
                   <div class="card-product white">
                     <div class="product-img">
                       <span class="discount">18%</span>
-                      <img src="img/1.jpg" alt="">
+                      <img src="https://megamart.az/29532-52622-large/sireceken-fakir-lucra.jpg" alt="">
                     </div>
                     <div class="product-title">
                       <h5>iPhone 6S 64 GB</h5>
@@ -316,11 +323,11 @@
                     <a href="#" class="btn btn-primary">Купить</a>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-30 col-xs-30">
                   <div class="card-product white">
                     <div class="product-img">
                       <span class="discount">18%</span>
-                      <img src="img/1.jpg" alt="">
+                      <img src="https://megamart.az/26923-48606-large/-toshiba-lcd-full-hd-32-lv833g.jpg" alt="">
                     </div>
                     <div class="product-title">
                       <h5>iPhone 6S 64 GB</h5>
@@ -337,11 +344,11 @@
                     <a href="#" class="btn btn-primary">Купить</a>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-30 col-xs-30 hidden-sm hidden-xs">
                   <div class="card-product white">
                     <div class="product-img">
                       <span class="discount">18%</span>
-                      <img src="img/1.jpg" alt="">
+                      <img src="https://megamart.az/35362-65673-large/televizor-lg-32-hd-32lb552u-led.jpg" alt="">
                     </div>
                     <div class="product-title">
                       <h5>iPhone 6S 64 GB</h5>
@@ -364,7 +371,7 @@
             
             <section id="discount">
               <div class="jumbotron" style="background: url(../img/1.jpg);">
-                <h2>НОВОГОДНИЕ  СКИДКИ  УЖЕ ЗДЕСЬ!</h2>
+                <h2>НОВОГОДНИЕ  <span>СКИДКИ</span>  УЖЕ ЗДЕСЬ!</h2>
               </div>
             </section>
             
@@ -375,10 +382,10 @@
                     <h5 id="buttons">НОВИНКИ</h5>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-30 col-xs-30">
                   <div class="card-product">
                     <div class="product-img">
-                      <img src="img/1.jpg" alt="">
+                      <img src="https://megamart.az/30690-55004-large/-samsung-galaxy-note-3-neo-duos-sm-n7502-white.jpg" alt="">
                     </div>
                     <div class="product-title">
                       <h5>iPhone 6S 64 GB</h5>
@@ -394,10 +401,10 @@
                     <a href="#" class="btn btn-primary">Купить</a>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-30 col-xs-30">
                   <div class="card-product">
                     <div class="product-img">
-                      <img src="img/1.jpg" alt="">
+                      <img src="https://megamart.az/26980-68562-large/-robello-jng24.jpg" alt="">
                     </div>
                     <div class="product-title">
                       <h5>iPhone 6S 64 GB</h5>
@@ -413,10 +420,10 @@
                     <a href="#" class="btn btn-primary">Купить</a>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-30 col-xs-30">
                   <div class="card-product">
                     <div class="product-img">
-                      <img src="img/1.jpg" alt="">
+                      <img src="https://megamart.az/36617-68488-large/-dahua-ca-dw181e.jpg" alt="">
                     </div>
                     <div class="product-title">
                       <h5>iPhone 6S 64 GB</h5>
@@ -432,10 +439,10 @@
                     <a href="#" class="btn btn-primary">Купить</a>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-30 col-xs-30">
                   <div class="card-product">
                     <div class="product-img">
-                      <img src="img/1.jpg" alt="">
+                      <img src="https://megamart.az/26923-48606-large/-toshiba-lcd-full-hd-32-lv833g.jpg" alt="">
                     </div>
                     <div class="product-title">
                       <h5>iPhone 6S 64 GB</h5>
@@ -451,10 +458,10 @@
                     <a href="#" class="btn btn-primary">Купить</a>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-sm-30 col-xs-30 hidden-sm hidden-xs">
                   <div class="card-product">
                     <div class="product-img">
-                      <img src="img/1.jpg" alt="">
+                      <img src="https://megamart.az/35362-65673-large/televizor-lg-32-hd-32lb552u-led.jpg" alt="">
                     </div>
                     <div class="product-title">
                       <h5>iPhone 6S 64 GB</h5>
@@ -484,15 +491,15 @@
                   </div>
                   
                   <div class="row">
-                    <div class="col-lg-30">
+                    <div class="col-lg-30 col-sm-60 col-xs-60">
                       <div class="card-product flipped">
                         <div class="row">
-                          <div class="col-lg-30">
+                          <div class="col-lg-30 col-sm-30 col-xs-30">
                             <div class="product-img">
-                              <img src="img/1.jpg" alt="">
+                              <img src="https://megamart.az/35362-65673-large/televizor-lg-32-hd-32lb552u-led.jpg" alt="">
                             </div>
                           </div>
-                          <div class="col-lg-30">
+                          <div class="col-lg-30 col-sm-30 col-xs-30">
                             <div class="product-title">
                               <h5>iPhone 6S 64 GB</h5>
                             </div>
@@ -509,15 +516,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-30">
+                    <div class="col-lg-30 col-sm-60 col-xs-60">
                       <div class="card-product flipped">
                         <div class="row">
-                          <div class="col-lg-30">
+                          <div class="col-lg-30 col-sm-30 col-xs-30">
                             <div class="product-img">
-                              <img src="img/1.jpg" alt="">
+                              <img src="https://megamart.az/30690-55004-large/-samsung-galaxy-note-3-neo-duos-sm-n7502-white.jpg" alt="">
                             </div>
                           </div>
-                          <div class="col-lg-30">
+                          <div class="col-lg-30 col-sm-30 col-xs-30">
                             <div class="product-title">
                               <h5>iPhone 6S 64 GB</h5>
                             </div>
@@ -534,15 +541,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-30">
+                    <div class="col-lg-30 col-sm-60 col-xs-60">
                       <div class="card-product flipped">
                         <div class="row">
-                          <div class="col-lg-30">
+                          <div class="col-lg-30 col-sm-30 col-xs-30">
                             <div class="product-img">
-                              <img src="img/1.jpg" alt="">
+                              <img src="https://megamart.az/26923-48606-large/-toshiba-lcd-full-hd-32-lv833g.jpg" alt="">
                             </div>
                           </div>
-                          <div class="col-lg-30">
+                          <div class="col-lg-30 col-sm-30 col-xs-30">
                             <div class="product-title">
                               <h5>iPhone 6S 64 GB</h5>
                             </div>
@@ -559,15 +566,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-30">
+                    <div class="col-lg-30 col-sm-60 col-xs-60">
                       <div class="card-product flipped">
                         <div class="row">
-                          <div class="col-lg-30">
+                          <div class="col-lg-30 col-sm-30 col-xs-30">
                             <div class="product-img">
-                              <img src="img/1.jpg" alt="">
+                              <img src="https://megamart.az/36617-68488-large/-dahua-ca-dw181e.jpg" alt="">
                             </div>
                           </div>
-                          <div class="col-lg-30">
+                          <div class="col-lg-30 col-sm-30 col-xs-30">
                             <div class="product-title">
                               <h5>iPhone 6S 64 GB</h5>
                             </div>
@@ -637,29 +644,7 @@
         <footer>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-24">
-                <div class="row">
-                  <div class="col-lg-60">
-                    <p class="copyright">© 2010-2015. Megamart - онлайн мегамаркет</p>
-                    <p>Дж. Джаббарлы 44, телефон: (012) 404-80-90</p>
-                  </div>
-                  <div class="col-lg-30">
-                    <ul>
-                      <li><a href="#">О магазине</a></li>
-                      <li><a href="#">Вакансии</a></li>
-                      <li><a href="#">Контакты</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-30">
-                    <ul>
-                      <li><a href="#">Правила использования сайта</a></li>
-                      <li><a href="#">Подписаться на обновления</a></li>
-                      <li><a href="#">shop@megamart.az</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-36">
+              <div class="col-lg-36 col-sm-60 col-xs-60 pull-right">
                 <div class="row">
                   <div class="col-lg-60">
                     <div class="page-header">
@@ -669,22 +654,44 @@
                   </div>
                 </div>
               </div>
+              <div class="col-lg-24 col-sm-60 col-xs-60 pull-right">
+                <div class="row">
+                  <div class="col-lg-60">
+                    <p class="copyright">© 2010-2015. Megamart - онлайн мегамаркет</p>
+                    <p>Дж. Джаббарлы 44, телефон: (012) 404-80-90</p>
+                  </div>
+                  <div class="col-lg-30 col-sm-24 col-xs-24">
+                    <ul>
+                      <li><a href="#">О магазине</a></li>
+                      <li><a href="#">Вакансии</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-30 col-sm-36 col-xs-36">
+                    <ul>
+                      <li><a href="#">Правила использования сайта</a></li>
+                      <li><a href="#">Подписаться на обновления</a></li>
+                      <li><a href="#">shop@megamart.az</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </footer>
         <div id="basket">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-12">
-                <a href=""><i class="mm-icon-compare"></i> СРАВНЕНИЯ <span class="badge">4</span></a>
+              <div class="col-lg-12 col-sm-12 col-xs-12">
+                <a href=""><i class="mm-icon-compare"></i> <span class="name">СРАВНЕНИЯ</span> <span class="badge">4</span></a>
               </div>
-              <div class="col-lg-12">
-                <a href=""><i class="mm-icon-pin"></i> ОТМЕЧЕННОЕ <span class="badge">45</span></a>
+              <div class="col-lg-12 col-sm-12 col-xs-12">
+                <a href=""><i class="mm-icon-pin"></i> <span class="name">ОТМЕЧЕННОЕ</span> <span class="badge">45</span></a>
               </div>
-              <div class="col-lg-12">
-                <a href=""><i class="mm-icon-shop"></i> КОРЗИНА <span class="badge">2</span></a>
+              <div class="col-lg-12 col-sm-12 col-xs-12">
+                <a href=""><i class="mm-icon-shop"></i> <span class="name">КОРЗИНА</span> <span class="badge">2</span></a>
               </div>
-              <div class="col-lg-24">
+              <div class="col-lg-24 col-sm-24 col-xs-24">
                 <a href="" class="btn btn-default pull-right">ОФОРМИТЬ</a>
               </div>
             </div>

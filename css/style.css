@@ -53,6 +53,29 @@
     margin-left: 20px;
 }
 
+.navbar-default .navbar-toggle i{
+    margin-right: 10px;
+    font-size: 18px;
+    float: left;
+    margin-top: -1px;
+}
+
+.navbar-default .navbar-toggle{
+    margin: 15px auto;
+    padding: 12px 40px;
+    float: inherit;
+    display: inherit;
+    color: #fff;
+    background-color: #3e3b45;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus{
+    background-color: #3e3b45;
+}
+
 #wrapper.sidebar-wrapper-opened #sidebar-wrapper{
     left: 250px;
     margin-left: -250px;
@@ -142,6 +165,20 @@
     height: 50px;
 }
 
+#header-top .numbers{
+    display: inline-block;
+    font-weight: bold;
+}
+
+#header-top span{
+    height: 50px;
+    line-height: 50px;
+}
+
+#header-top span .clock-icon{
+    margin-top: -5px;
+}
+
 #header-top ul{
     margin-top: 15px;
     padding: 0;
@@ -172,6 +209,16 @@
     color: #fff;
 }
 
+#header-main .logo{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#header-main .logo img{
+    margin: 0 auto;
+}
+
 #header-main > .container-fluid,
 #header-main > .container-fluid > .row,
 #header-main > .container-fluid > .row > div{
@@ -189,6 +236,14 @@
 
 #header-main .contact{
     text-align: right;
+}
+
+#header-main a.side-button{
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
 }
 
 #header-main .contact > h4{
@@ -266,8 +321,8 @@
     color: #fff;
     height: 50px;
     line-height: 50px;
-    margin: 0 -800px;
-    padding: 0 800px;
+    margin: 0 -40px;
+    padding: 0 40px;
 }
 
 .slider-item{
@@ -428,7 +483,7 @@ border-top-left-radius: 0;
 
 #hot-deals-slider{
     height: 405px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     overflow: hidden;
 }
 
@@ -443,7 +498,6 @@ border-top-left-radius: 0;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     position: relative;
-    height: 373px;
     margin-bottom: 20px;
 }
 
@@ -466,7 +520,6 @@ border-top-left-radius: 0;
 
 .card-product.flipped{
     padding: 20px 0;
-    height: 216px;
 }
 
 .card-product.flipped .col-lg-30{
@@ -478,7 +531,6 @@ border-top-left-radius: 0;
 }
 
 .card-product .product-img{
-    height: 175px;
 }
 
 .card-product .product-img img{
@@ -674,6 +726,7 @@ footer ul li a:hover{
     -moz-border-radius-topleft: 0;
     border-radius: 35px;
     border-top-left-radius: 0;
+    margin-bottom: 30px;
 }
 
 #super-deals .super-deal-product{
