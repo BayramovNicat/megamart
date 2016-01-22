@@ -311,3 +311,7 @@ fieldset[disabled] .btn-default.active {
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse{
     margin: 0;
 }
+
+.navbar-collapse{
+    border: none;
+}

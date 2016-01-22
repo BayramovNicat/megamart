@@ -168,6 +168,8 @@
 #header-top .numbers{
     display: inline-block;
     font-weight: bold;
+    height: 50px;
+    line-height: 50px;
 }
 
 #header-top span{
@@ -183,6 +185,8 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    height: 50px;
+    line-height: 50px;
 }
 
 #header-top li{

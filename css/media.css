@@ -5,6 +5,10 @@
 	.navbar .dropdown > a > i{
 		margin-left: 0;
 	}
+	
+	.nav.navbar-nav .dropdown .button-text{
+		display: none;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -146,6 +150,9 @@
 	}
 	.card-product.flip .product-description{
 	    width: 40%;
+	}
+	.navbar-nav > li > a{
+		text-align: center;
 	}
 }
 
