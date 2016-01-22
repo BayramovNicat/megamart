@@ -56,13 +56,12 @@
 .navbar-default .navbar-toggle i{
     margin-right: 10px;
     font-size: 18px;
-    float: left;
     margin-top: -1px;
 }
 
 .navbar-default .navbar-toggle{
     margin: 15px auto;
-    padding: 12px 40px;
+    width: 100%;
     float: inherit;
     display: inherit;
     color: #fff;
@@ -163,6 +162,7 @@
     background-color: #920000;
     color: #fff;
     height: 50px;
+    overflow: hidden;
 }
 
 #header-top .numbers{
@@ -180,7 +180,7 @@
 }
 
 #header-top ul{
-    margin-top: 15px;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -196,7 +196,9 @@
 }
 
 #header-top li a{
+    height: 50px;
     color: #fff;
+    line-height: 50px;
 }
 
 #header-top li img{
@@ -274,7 +276,7 @@
     position: absolute;
     top: 10px;
     right: 12px;
-    z-index: 3;
+    z-index: 4;
     border: none;
     background: transparent;
     color: #3b3742;
@@ -354,7 +356,7 @@
 
 .slider-item .img{
     width: 100%;
-    background-size: auto 100%;
+    background-size: cover;
     background-position: center;
     height: 405px;
 }
@@ -499,7 +501,7 @@ border-top-left-radius: 0;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     position: relative;
-    margin: 4px 15px 40px;
+    margin: 4px 15px 20px;
 }
 
 .card-product:before{
@@ -514,9 +516,7 @@ border-top-left-radius: 0;
 
 .card-product.white{
     background-color: #fff;
-    -webkit-box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    -moz-box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .card-product.flip{
@@ -524,12 +524,12 @@ border-top-left-radius: 0;
 }
 
 .card-product.flip .product-img{
-    width: calc(60% - 20px);
+    width: calc(50% - 20px);
     display: inline-block;
     float: left;
 }
 .card-product.flip .product-description{
-    width: 40%;
+    width: 50%;
     display: inline-block;
     float: right;
 }
@@ -717,10 +717,6 @@ footer ul li a:hover{
     #page-content-wrapper {
         position: relative;
     }
-
-    .slider-item .img{
-        background-size: 100% auto;
-    }
 }
 
 
@@ -791,4 +787,19 @@ span.discount{
 
 .items-slider{
     margin: -4px -15px 0px;
+}
+
+.jumbotron{
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-nav > li > a{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+}
+
+.navbar-nav > li > a.dropdown-toggle{
+    padding: 0 20px;
 }

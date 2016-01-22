@@ -15,6 +15,7 @@ function item_slider_init(){
 		speed: 200,
 		dots: false,
 		infinite: false,
+		arrows: false,
 		cssEase: 'ease',
 		slidesToShow: 5,
 		slidesToScroll: 5,
