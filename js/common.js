@@ -89,12 +89,30 @@ function sidebar_button(){
 	});
 }
 
+$('.product_small_img').on('click', function(){
+	$('.product_small_img').removeClass('active');
+	$(this).addClass('active');
+	$('#product_img').attr('src',$(this).attr('href')).attr('data-zoom-image',$(this).attr('href'));
+	$('.zoomWindowContainer > div').css('background-image','url("'+$(this).attr('href')+'")')
+	return false;
+});
+
+function product_img_zoom(){
+	$('#product_img').elevateZoom({
+    	zoomType: "inner",
+		cursor: "crosshair",
+		zoomWindowFadeIn: 500,
+		zoomWindowFadeOut: 750
+	}); 
+}
+
 $(document).ready(function(){
 	slider_init();
 	item_slider_init();
 	sidebar_open();
 	search_button();
 	sidebar_button();
+	product_img_zoom();
 });
 
 

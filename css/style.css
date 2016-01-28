@@ -653,7 +653,7 @@ footer .copyright{
 }
 
 footer ul{
-    margin-top: 28px;
+    margin-top: 15px;
     list-style: none;
     padding: 0;
 }
@@ -806,4 +806,87 @@ span.discount{
 
 .navbar-nav > li > a.dropdown-toggle{
     padding: 0 20px;
+}
+
+#product_img{
+    margin: 0 auto;
+}
+
+.product_small_img img{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #f6f6f6;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    margin-bottom: 40px;
+}
+
+.product_small_img.active img{
+    border-color: #f24f3b;
+}
+
+.card-product-desc{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #F6F6F6;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.card-product-desc .product-price{
+    font-size: 20px;
+}
+
+.card-product-desc .product-price i.mm-icon-azn{
+    font-size: 14px;
+    top: 4px;
+}
+
+.card-product-desc .bonus{
+    color: #f24f3b;
+    font-family: "FuturaPT-Heavy";
+    letter-spacing: 1px;
+    border-bottom: 1px solid #fff;
+    padding: 10px 20px 15px;
+    margin: 0 -20px;
+}
+
+.card-product-desc > a{
+    margin-top: 20px;
+    display: block;
+}
+
+.card-product-desc .link-compare{
+    font-family: "FuturaPT-Heavy";
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.card-product-desc .link-compare .mm-icon-compare{
+    font-size: 20px;
+    float: left;
+}
+
+.card-product-desc .link-compare span{
+    margin-top: 2px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.card-product-desc .product-actions{
+    border-top: 1px solid #fff;
+    padding: 20px 20px 10px;
+    margin: 80px -20px 0;
+}
+
+#about_product .btn{
+    display: block;
+}
+
+#about_product{
+    margin-bottom: 60px;
 }
